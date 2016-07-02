@@ -65,12 +65,12 @@ header {
 	padding: 1em 0;
 	height: 1em;
 	font-size: 1em;
+	z-index: 2;
 }
 
 nav {
 	position: absolute;
-	top: auto;
-	left: 0;
+	left: 1%;
 }
 
 a {
@@ -79,29 +79,52 @@ a {
 	padding: 1em;
 }
 
-a:hover {
-	color: yellow;
-	background-color: green;
-}
-
-img {
-width: 100%;
-margin: 0 auto;
+.a-menor {
 display: block;
 }
 
+a:hover {
+	color: yellow;
+}
+
+.a-colorido:hover {
+	background-color: #47569C;
+}
+
+img.largura-total {
+	width: 100%;
+	margin: 0;
+	display: block;
+}
+
+article {
+  color: #000000;
+	width: 100%;
+  margin: 0 auto;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
 section {
-  color: #000000
+	width: 50%;
+	box-sizing: border-box;
+	padding: 5%;
+	position: absolute;
 }
 
-.post-container {
-  width: 100%;
-  margin: 0 auto;
+section.content {
+position: absolute;
+left: 0;
+top: 100%;
+margin: 0 auto;
 }
 
-div {
-  width: 70%;
-  margin: 0 auto;
+section.fotos {
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	width: 30%;
 }
 
 h1 {
@@ -144,4 +167,28 @@ b {
 
 i {
   font-style: italic;
+}
+
+.submenu {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	right: auto;
+	display: none;
+	background-color: #47569C;
+	padding: 1em;
+	font-size: 1em;
+}
+
+.main li:hover ul {
+	display: block;
+}
+
+.main li {
+	display: inline;
+	position: relative;
+}
+
+.submenu li {
+	display: block;
 }
